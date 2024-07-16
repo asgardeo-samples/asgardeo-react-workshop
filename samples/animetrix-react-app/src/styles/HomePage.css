@@ -1,0 +1,65 @@
+/* Home page component styles */
+.hero-section {
+    margin: 0;
+    background: url("../assets/naruto-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 13vh;
+    padding: 66px;  
+}
+  
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-button {
+    border: 1px solid #87c1d6;
+    margin-top: 10px;
+}
+  
+.text-content {
+    max-width: 60%;
+    padding-left: 50px;
+}
+  
+.text-content h1 {
+    margin: 0;
+    font-size: 26px;
+}
+  
+.text-content p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #bcc0c4;
+}
+  
+.image-content img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.movie-image {
+    width: 100%;
+    min-height: 178px;
+}
+
+.category {
+    margin: 30px 120px;
+}
+    
+.category h2 {
+    margin: 0 0 20px 0px;
+}
+
+.movie-list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-content-wrapper {
+    margin-bottom: 60px;
+    min-height: 100vh;
+}

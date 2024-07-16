@@ -1,0 +1,323 @@
+<svg
+    viewBox='0 -20 1600 400'
+    version='1.2'
+    xmlns='http://www.w3.org/2000/svg'
+    xmlnsXlink='http://www.w3.org/1999/xlink'
+    className='quiz-graph'
+>
+    <defs>
+        <pattern id='grid' width='100' height='50' patternUnits='userSpaceOnUse'>
+            <path d='M 100 0 L 0 0 0 50' fill='none' stroke='#e5e5e5' strokeWidth='1'></path>
+        </pattern>
+    </defs>
+    <rect x='50' width='calc(100% - 50px)' height='300px' fill='url(#grid)' stroke='gray'></rect>
+    <g className='label-title' fill='white'>
+        <text x='-160' y='10' transform='rotate(-90)'>
+            Revenue
+        </text>
+    </g>
+    <g className='label-title' fill='white'>
+        <text x='50%' y='350'>
+            Quarters
+        </text>
+    </g>
+    <g className='x-labels' >
+        <text x='150' y='320' fill='gray'>
+            Q1
+        </text>
+        <text x='250' y='320' fill='gray'>
+            Q2
+        </text>
+        <text x='350' y='320' fill='gray'>
+            Q3
+        </text>
+        <text x='450' y='320' fill='gray'>
+            Q4
+        </text>
+        <text x='550' y='320' fill='gray'>
+            Q5
+        </text>
+        <text x='650' y='320' fill='gray'>
+            Q6
+        </text>
+        <text x='750' y='320' fill='gray'>
+            Q7
+        </text>
+        <text x='850' y='320' fill='gray'>
+            Q8
+        </text>
+        <text x='950' y='320' fill='gray'>
+            Q9
+        </text>
+        <text x='1050' y='320' fill='gray'>
+            Q10
+        </text>
+        <text x='1150' y='320' fill='gray'>
+            Q11
+        </text>
+        <text x='1250' y='320' fill='gray'>
+            Q12
+        </text>
+        <text x='1350' y='320' fill='gray'>
+            Q13
+        </text>
+        <text x='1450' y='320' fill='gray'>
+            Q14
+        </text>
+        <text x='1550' y='320' fill='gray'>
+            Q15
+        </text>
+    </g>
+    <g className='y-labels'>
+        <text x='25' y='5' fill='gray'>
+            30
+        </text>
+        <text x='25' y='55' fill='gray'>
+            25
+        </text>
+        <text x='25' y='105' fill='gray'>
+            20
+        </text>
+        <text x='25' y='155' fill='gray'>
+            15
+        </text>
+        <text x='25' y='205' fill='gray'>
+            10
+        </text>
+        <text x='30' y='255' fill='gray'>
+            5
+        </text>
+        <text x='30' y='305' fill='gray'>
+            0
+        </text>
+    </g>
+    <linearGradient id='grad' x1='0%' y1='0%' x2='0%' y2='100%'>
+        <stop offset="0%" style="stop-color: rgba(99,224,238,.5); stop-opacity: 1;"></stop>
+        <stop offset="100%" style="stop-color: white; stop-opacity: 0;"></stop>
+    </linearGradient>
+    <polyline
+        fill='url(#grad)'
+        stroke='#34becd'
+        strokeWidth='0'
+        points='
+            50,300
+            51,0
+            150,100
+            250,80
+            350,160
+            450,100
+            550,100
+            650,150
+            750,200
+            850,180
+            950,170
+            1050,160
+            1150,150
+            1250,140
+            1350,130
+            1450,120
+            1550,110
+            1550,300
+        '
+    ></polyline>
+    <polyline
+        fill='none'
+        stroke='#34becd'
+        strokeWidth='2'
+        points='
+            50,0
+            150,100
+            250,80
+            350,160
+            450,100
+            550,100
+            650,150
+            750,200
+            850,180
+            950,170
+            1050,160
+            1150,150
+            1250,140
+            1350,130
+            1450,120
+            1550,110
+        '
+    ></polyline>
+    <g>
+        <circle 
+            stroke='#ffff' 
+            fill='rgba(0,112,210,1)' 
+            cx='50' 
+            cy='0' 
+            data-value='7.2' 
+            r='6'
+        ></circle>
+        <circle
+            stroke='#ffff' 
+            fill='rgba(0,112,210,1)' 
+            cx='150'
+            cy='100'
+            data-value='8.1'
+            r='6'
+            data-q-title='Q1'
+            data-answer-count='200'
+            data-percent-value='66%'
+        ></circle>
+        <circle
+            stroke='#ffff' 
+            fill='rgba(0,112,210,1)' 
+            className='quiz-graph-dot'
+            cx='250'
+            cy='80'
+            data-value='7.7'
+            r='6'
+            data-q-title='Q2'
+            data-answer-count='220'
+            data-percent-value='73%'
+        ></circle>
+        <circle
+            stroke='#ffff' 
+            fill='rgba(0,112,210,1)' 
+            className='quiz-graph-dot'
+            cx='350'
+            cy='160'
+            data-value='6.8'
+            r='6'
+            data-q-title='Q3'
+            data-answer-count='140'
+            data-percent-value='46%'
+        ></circle>
+        <circle
+            stroke='#ffff' 
+            fill='rgba(0,112,210,1)' 
+            cx='450'
+            cy='100'
+            data-value='6.7'
+            r='6'
+            data-q-title='Q4'
+            data-answer-count='200'
+            data-percent-value='66%'
+        ></circle>
+        <circle
+            stroke='#ffff' 
+            fill='rgba(0,112,210,1)' 
+            cx='550'
+            cy='100'
+            data-value='6.7'
+            r='6'
+            data-q-title='Q5'
+            data-answer-count='200'
+            data-percent-value='66%'
+        ></circle>
+        <circle
+            stroke='#ffff' 
+            fill='rgba(0,112,210,1)' 
+            cx='650'
+            cy='150'
+            data-value='6.7'
+            r='6'
+            data-q-title='Q6'
+            data-answer-count='150'
+            data-percent-value='50%'
+        ></circle>
+        <circle
+            stroke='#ffff' 
+            fill='rgba(0,112,210,1)' 
+            cx='750'
+            cy='200'
+            data-value='6.7'
+            r='6'
+            data-q-title='Q7'
+            data-answer-count='100'
+            data-percent-value='33%'
+        ></circle>
+        <circle
+            stroke='#ffff' 
+            fill='rgba(0,112,210,1)' 
+            cx='850'
+            cy='180'
+            data-value='6.7'
+            r='6'
+            data-q-title='Q8'
+            data-answer-count='120'
+            data-percent-value='40%'
+        ></circle>
+        <circle
+            stroke='#ffff' 
+            fill='rgba(0,112,210,1)' 
+            cx='950'
+            cy='170'
+            data-value='6.7'
+            r='6'
+            data-q-title='Q9'
+            data-answer-count='130'
+            data-percent-value='43%'
+        ></circle>
+        <circle
+            stroke='#ffff' 
+            fill='rgba(0,112,210,1)' 
+            cx='1050'
+            cy='160'
+            data-value='6.7'
+            r='6'
+            data-q-title='Q10'
+            data-answer-count='140'
+            data-percent-value='46%'
+        ></circle>
+        <circle
+            stroke='#ffff' 
+            fill='rgba(0,112,210,1)' 
+            cx='1150'
+            cy='150'
+            data-value='6.7'
+            r='6'
+            data-q-title='Q11'
+            data-answer-count='150'
+            data-percent-value='50%'
+        ></circle>
+        <circle
+            stroke='#ffff' 
+            fill='rgba(0,112,210,1)' 
+            cx='1250'
+            cy='140'
+            data-value='6.7'
+            r='6'
+            data-q-title='Q12'
+            data-answer-count='160'
+            data-percent-value='53%'
+        ></circle>
+        <circle
+            stroke='#ffff' 
+            fill='rgba(0,112,210,1)' 
+            cx='1350'
+            cy='130'
+            data-value='6.7'
+            r='6'
+            data-q-title='Q13'
+            data-answer-count='170'
+            data-percent-value='56%'
+        ></circle>
+        <circle
+            stroke='#ffff' 
+            fill='rgba(0,112,210,1)' 
+            cx='1450'
+            cy='120'
+            data-value='6.7'
+            r='6'
+            data-q-title='Q14'
+            data-answer-count='180'
+            data-percent-value='60%'
+        ></circle>
+        <circle
+            stroke='#ffff' 
+            fill='rgba(0,112,210,1)' 
+            cx='1550'
+            cy='110'
+            data-value='6.7'
+            r='6'
+            data-q-title='Q15'
+            data-answer-count='190'
+            data-percent-value='63%'
+        ></circle>
+    </g>
+</svg>
