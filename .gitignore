@@ -34,6 +34,10 @@ dist
 dist-ssr
 *.local
 
+target
+generated
+Config.toml
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
