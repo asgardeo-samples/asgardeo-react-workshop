@@ -1,0 +1,49 @@
+openapi: 3.0.1
+info:
+  title: Movie Catalog API
+  version: 0.1.0
+  description: API to fetch movie categories and their resources.
+servers:
+- url: "{server}:{port}/movies"
+  variables:
+    server:
+      default: http://localhost
+    port:
+      default: "9090"
+paths:
+  /categories:
+    get:
+      summary: Get all movie categories
+      description: Fetches all available movie categories along with their resources.
+      operationId: getCategories
+      responses:
+        "200":
+          description: Ok
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Catergory'
+        "500":
+          description: Internal server error
+          content:
+            text/plain:
+              schema:
+                type: string
+components:
+  schemas:
+    Catergory:
+      required:
+      - catergoryId
+      - catergoryName
+      - resources
+      type: object
+      properties:
+        catergoryId:
+          type: string
+        catergoryName:
+          type: string
+        resources:
+          type: array
+          items: {}
