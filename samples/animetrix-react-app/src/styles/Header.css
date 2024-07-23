@@ -1,0 +1,54 @@
+/* Header component styles */
+.navbar {
+    max-width: 100%;
+    display: flex;
+    background: #2e2d2d;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-height: 55px;
+    box-shadow: 0 2px 4px rgb(40 40 40);
+}
+
+.navbar a {
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+    font-size: medium;
+    text-align: center;
+    box-shadow: #7a7a82;
+    color: #fff;
+}
+
+.right-panel {
+    width: 50%;
+    padding: 10px;
+    text-align: right;
+    margin-left: 10px;
+    float: left;
+    display: flex;
+    justify-content: right; /* Centers the columns horizontally */
+    align-items: center;
+}
+
+.left-panel {
+    width: 15%;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centers the columns horizontally */
+    align-items: center;
+}
+
+.center-panel {
+    width: 40%;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    justify-content: left; /* Centers the columns horizontally */
+    align-items: center;
+}
+
+.center-panel a {
+    width: 70px;
+}
