@@ -10,6 +10,13 @@ export const LandingPage = () => {
     const navigate = useNavigate();
     const { on, state, signIn, signOut } = useAuthContext();
 
+    const handleSignupRedirect = () => {
+        const signupURL = `${import.meta.env.VITE_REACT_APP_ASGARDEO_SIGN_UP_URL}${import.meta.env.VITE_REACT_APP_CLIENT_ID}
+            &sp=${import.meta.env.VITE_REACT_APP_NAME}&redirect_url=${import.meta.env.VITE_REACT_APP_BASE_URL}`;
+
+        window.location.href = signupURL;
+    }
+
     useEffect(() => {
         on("sign-in", () => {
             navigate("/home");
@@ -34,7 +41,7 @@ export const LandingPage = () => {
                         <button onClick={ () => signIn() }>Sign In</button>
                     )
                 }
-                <button onClick={ () => navigate("/signup") }>Create Account</button>
+                <button onClick={ handleSignupRedirect }>Create Account</button>
             </div>
             </div>
         </div>

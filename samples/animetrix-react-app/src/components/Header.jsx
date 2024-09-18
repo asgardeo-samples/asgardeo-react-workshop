@@ -4,15 +4,23 @@ import { useAuthContext } from "@asgardeo/auth-react";
 
 export const Header = () => {
 
-    const { state, getDecodedIDToken, signOut } = useAuthContext();
+    const { state, getDecodedIDToken } = useAuthContext();
 
-    const [ isResourcesAllowed, setIsResourcesAllowed ] = useState();
+    const [ isResourcesAllowed, setIsResourcesAllowed ] = useState(false);
 
     // Filter the display of Insights section based on the application role.
     useEffect(() => {
         getDecodedIDToken()
             .then((decodedIdToken) => {
-                if (decodedIdToken?.application_roles === "Anime-App-Admin") {
+                if (!decodedIdToken?.roles) {
+                    return;
+                }
+
+                if (decodedIdToken?.roles === "Anime-App-Admin") {
+                    setIsResourcesAllowed(true);
+                }
+
+                if (decodedIdToken?.roles.includes("Anime-App-Admin")) {
                     setIsResourcesAllowed(true);
                 }
             })
